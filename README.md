@@ -8,8 +8,60 @@
 - Profesor: Carlos Mauricio Gaona Cuevas
 
 ## Autores
-- Robert Fernando Gil Trujillo - ?????????
+- Robert Fernando Gil Trujillo - 2022985
 - Diana Carolina Micolta Céspedes - ?????????
 - Marcelo Alejandro García Millán - 201941427
+<<<<<<< HEAD
 - Janiert Sebastián Salas Castillo - 201941265
 - Diego Fernando Victoria López - 202125877
+=======
+- Janiert Sebastián Salas Castillo - ?????????
+- Diego Fernando Victoria López - ?????????
+
+
+## Como ejecutar el código con ambiente virtual:
+
+
+pip install virtualenv 
+
+
+<br>
+Para crear el ambiente virtual llamado"venv":
+
+
+python -m venv venv
+
+
+<br>
+Para ejecutar el ambiente virtual (sólo en Windows):
+
+
+.\venv\Scripts\activate
+
+
+<br>
+Realizar las instalaciones de las dependencias (procure haber ejecutado el ambiente virtual):
+
+
+pip install -r requirements.txt
+
+<br>
+Para realizar las migraciones a la base de datos de postgres (NOTA: Asegurarse de las respectivas credenciales de acceso a su BD local):
+
+
+python manage.py makemigrations
+python manage.py migrate
+
+<br>
+Para ejecutar el servidor Django:
+
+
+python manage.py runserver
+
+
+<br>
+Para cerrar el ambiente virtual:
+
+
+deactivate
+>>>>>>> main
