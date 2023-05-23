@@ -50,10 +50,19 @@ class User(models.Model):
     
     @staticmethod
     def user_get_all():
-        estudiantes = User.objects.all()
-        return estudiantes
+        user = User.objects.all()
+        return user
     
     @staticmethod
     def user_get(user_id: int):
-        estudiante = User.objects.get(user_id=user_id)
-        return estudiante
+        user = User.objects.get(user_id=user_id)
+        return user
+
+    @staticmethod
+    def user_get_by_email(email: str, password):
+        user = User.objects.get(email=email)
+        response = password == user.password
+        if response:
+            return user
+        else:
+            return False
