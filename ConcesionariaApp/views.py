@@ -69,6 +69,37 @@ def user_get(request, user_id):
             return JsonResponse({'status': 'ERROR', 'message': 'dont exists'}, status=404)
     else:
         return JsonResponse({'status': 'ERROR'}, status=405)
+    
+
+@csrf_exempt
+def user_verify_login(request, email: str, password: str):
+    if request.method == 'GET':
+        try:
+            user = User.user_get_by_email(email, password)
+            if user:
+                data = {
+                    'user': {
+                        'id': user.user_id,
+                        'email': user.email, 
+                        'name': user.name, 
+                        'phone': user.phone, 
+                        'password': user.password,
+                    },
+                    'response': True,
+                }
+                return JsonResponse(data)
+            else:
+                return JsonResponse({
+                    'message': 'Login failed',
+                    'response': False
+                })
+        except User.DoesNotExist:
+            return JsonResponse({ 
+                'message': 'user doesn\'t exist',
+                'response': False
+                }, status=404)
+    else:
+        return JsonResponse({'status': 'ERROR'}, status=405)
 
 
 @csrf_exempt
