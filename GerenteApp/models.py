@@ -38,3 +38,6 @@ class Seller(models.Model):
     #llave foranea a office
     office_id = models.ForeignKey(Office, null=True, blank=True, on_delete=models.CASCADE)
     account_id = models.ForeignKey(Account,null=True, blank=True,on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f'{self.name}, {self.last_name}' 

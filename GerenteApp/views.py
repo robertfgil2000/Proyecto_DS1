@@ -1,5 +1,7 @@
 from django.shortcuts import render, redirect
-from .models import Office, Address
+from rest_framework import viewsets
+from .serializers import SellerSerializer
+from .models import Office, Address, Seller
 
 # Create your views here.
 def sucursal(request):   
@@ -15,5 +17,6 @@ def crear_sucursal(request):
     #print(request.POST) #enviar datos metodo post
     return redirect('/gerente/sucursal/')
     
-
-
+class SellerView(viewsets.ModelViewSet):
+    serializer_class =  SellerSerializer
+    queryset = Seller.objects.all()
