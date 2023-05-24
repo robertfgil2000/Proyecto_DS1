@@ -8,11 +8,11 @@
 - Profesor: Carlos Mauricio Gaona Cuevas
 
 ## Autores
-- Robert Fernando Gil Trujillo - 2022985
+- Robert Fernando Gil Trujillo - 202022985
 - Diana Carolina Micolta Céspedes - 202028287
 - Marcelo Alejandro García Millán - 201941427
-- Janiert Sebastián Salas Castillo - ?????????
-- Diego Fernando Victoria López - ?????????
+- Janiert Sebastián Salas Castillo - 201941265
+- Diego Fernando Victoria López - 202125877
 
 
 ## Como ejecutar el código con ambiente virtual:
