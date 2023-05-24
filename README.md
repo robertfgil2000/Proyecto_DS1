@@ -9,7 +9,7 @@
 
 ## Autores
 - Robert Fernando Gil Trujillo - 2022985
-- Diana Carolina Micolta Céspedes - ?????????
+- Diana Carolina Micolta Céspedes - 202028287
 - Marcelo Alejandro García Millán - 201941427
 - Janiert Sebastián Salas Castillo - ?????????
 - Diego Fernando Victoria López - ?????????
