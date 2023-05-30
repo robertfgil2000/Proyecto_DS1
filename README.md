@@ -8,16 +8,11 @@
 - Profesor: Carlos Mauricio Gaona Cuevas
 
 ## Autores
-- Robert Fernando Gil Trujillo - 2022985
-- Diana Carolina Micolta Céspedes - ?????????
+- Robert Fernando Gil Trujillo - 202022985
+- Diana Carolina Micolta Céspedes - 202028287
 - Marcelo Alejandro García Millán - 201941427
-<<<<<<< HEAD
 - Janiert Sebastián Salas Castillo - 201941265
 - Diego Fernando Victoria López - 202125877
-=======
-- Janiert Sebastián Salas Castillo - ?????????
-- Diego Fernando Victoria López - ?????????
-
 
 ## Como ejecutar el código con ambiente virtual:
 
@@ -64,4 +59,4 @@ Para cerrar el ambiente virtual:
 
 
 deactivate
->>>>>>> main
+
